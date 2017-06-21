@@ -5,3 +5,4 @@ docker ps -a -q | ForEach-Object {docker rm $_}
 
 #Delete all docker Images
 docker image ls -a -q | ForEach-Object {docker rmi $_}
+"Docker Images Deleted"
