@@ -1,0 +1,11 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+    # Can be change for ports your app run
+     - "1337:1337"
+    # volumes:
+    #  - .:/var/www/app
+  mongo:
+    image: "mongo:3.4"
