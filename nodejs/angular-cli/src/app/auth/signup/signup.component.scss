@@ -1,0 +1,29 @@
+.box-title{
+  position: absolute;
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  top: -70px;;
+}
+
+.box-body{
+  padding-top: 5%;
+}
+
+#line-position{
+  width: 80%;
+  height: 5px;
+  background: #d7d7d7;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+
+}
+
+.display-block{
+  display: block;
+}
+

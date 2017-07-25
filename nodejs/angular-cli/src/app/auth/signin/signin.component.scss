@@ -1,0 +1,15 @@
+$color-theme:  #e6294b;
+input{
+  border-radius: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: solid 1px rgba(141, 138, 165, 0.38);
+}
+
+.background-theme{
+  background: $color-theme;
+}
+
+.color-theme{
+  color: $color-theme;
+}

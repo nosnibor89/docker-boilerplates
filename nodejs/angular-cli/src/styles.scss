@@ -1,0 +1,62 @@
+/* You can add global styles to this file, and also import other style files */
+
+input{
+  font-family: "Karla", sans-serif !important;
+}
+
+.inicia-sesion {
+  letter-spacing: 1.5px;
+  padding: 30px;
+}
+
+
+.card {
+  border-radius: 1.25rem;
+
+  .card-header{
+    border-radius: 15px 15px 0 0 !important;
+  }
+}
+
+.btn-group {
+  .btn {
+    min-width: 120px !important;
+  }
+}
+
+.text-danger{
+  color: #f62d51;
+}
+.danger{
+  background: #f62d51;
+}
+
+.text-white{
+  color: white;
+}
+.white{
+  background: white;
+}
+
+
+small{
+  font-size: 0.8rem;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.row{
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.-side-nav{
+  background: #1d1e37 !important;
+}
+
+.text-side-nav{
+  color: #1d1e37 !important;
+}

@@ -1,0 +1,66 @@
+<section id="wrapper">
+  <div class="login-register" style="background-image:url(../assets/images/background/login-register.jpg);">
+    <div class="row">
+      <div class="col-md-8 offset-md-2 col-xl-6 offset-xl-3 card">
+        <div class=" card-block" style="position: relative;padding: 10% 14% 14% 14%;">
+          <div class="form-horizontal form-material" id="loginform" style="position: relative;">
+            <h3 class="box-title m-b-20 btn-danger text-center">Registro</h3>
+            <div class="row box-body" style="position: relative;">
+              <div class="col-sm-4 text-center" style="z-index: 1"  >
+                <span class="fa-stack fa-2x white" *ngIf="positionWizard === 0">
+                  <i class="fa fa-circle fa-stack-2x text-danger"></i>
+                  <i class="fa fa-user fa-stack-1x text-white"></i>
+                </span>
+                <span class="fa-stack fa-2x white" *ngIf="positionWizard > 0">
+                  <i class="fa fa-circle-o fa-stack-2x text-danger"></i>
+                  <i class="fa fa-check fa-stack-1x text-danger"></i>
+                </span>
+                <div class="display-block"><small>1. Registro</small></div>
+              </div>
+              <div class="col-sm-4 text-center" style="z-index: 1">
+                <span class="fa-stack fa-2x white" *ngIf="positionWizard === 1">
+                  <i class="fa fa-circle fa-stack-2x text-danger"></i>
+                  <i class="fa fa-key fa-stack-1x text-white"></i>
+                </span>
+                <span class="fa-stack fa-2x white" *ngIf="positionWizard < 1">
+                  <i class="fa fa-circle fa-stack-2x " style="color: darkgrey;"></i>
+                  <i class="fa fa-key fa-stack-1x text-white"></i>
+                </span>
+                <span class="fa-stack fa-2x white" *ngIf="positionWizard > 1">
+                  <i class="fa fa-circle-o fa-stack-2x text-danger"></i>
+                  <i class="fa fa-check fa-stack-1x text-danger"></i>
+                </span>
+                <div class="display-block"><small>2. Contraseña</small></div>
+              </div>
+              <div class="col-sm-4 text-center" style="z-index: 1">
+                <span class="fa-stack fa-2x white"  *ngIf="positionWizard === 2">
+                  <i class="fa fa-circle fa-stack-2x text-danger"></i>
+                  <i class="fa fa-magic fa-stack-1x text-white"></i>
+                </span>
+                <span class="fa-stack fa-2x white"  *ngIf="positionWizard < 2">
+                  <i class="fa fa-circle fa-stack-2x" style="color: darkgrey;"></i>
+                  <i class="fa fa-magic fa-stack-1x text-white"></i>
+                </span>
+                <div class="display-block"><small>3. pin</small></div>
+              </div>
+              <div id="line-position"></div>
+            </div>
+            <div class=" box-body">
+              <div *ngIf="positionWizard === 0">
+                <app-init-signup (continue)="nexWizard()" (back)="backWizard()"></app-init-signup>
+              </div>
+              <div *ngIf="positionWizard === 1">
+                <app-password-signup (continue)="nexWizard()" (back)="backWizard()"></app-password-signup>
+              </div>
+              <div *ngIf="positionWizard === 2">
+                <app-pin-signup (continue)="nexWizard()" (back)="backWizard()"></app-pin-signup>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
