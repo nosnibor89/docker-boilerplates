@@ -1,10 +1,11 @@
-version: '3'
+version: '2'
 services:
   web:
     extends:
       file: common.yml
       service: web
-    image: nosnibor89/sailsjs:1.0
+    build: .
+    # image: nosnibor89/sailsjs:1.0
   mongo:
     extends:
       file: common.yml
