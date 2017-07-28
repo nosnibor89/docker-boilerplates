@@ -1,6 +1,6 @@
 # Docker Boileplates
 
-Just a bunch of configuration files and command utils for proyect management and deployments.
+Just a bunch of configuration files and util commands for proyect management and deployments.
 
 So fa we have:
 
