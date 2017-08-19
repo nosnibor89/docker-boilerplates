@@ -1,0 +1,7 @@
+version: '2'
+services:
+  scrapper:
+    build: .
+    container_name: scrapy-scrapper
+    volumes:
+     - .:/app
