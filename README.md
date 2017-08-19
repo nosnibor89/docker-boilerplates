@@ -6,7 +6,9 @@ So fa we have:
 
 1. Util commands for
     - Windows(PowerShell)
+    - Linux (Bash)
 
 2. Proyects
     - Angular
     - NodeJS(TrailsJS/SailsJS)
+    - Scrappers (Scrapy/CasperJs)
