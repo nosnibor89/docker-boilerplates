@@ -21,3 +21,7 @@ docker images | grep "pattern" | awk '{print $1}' | xargs docker rm
 
 #Delete all networks
 docker rm $(docker network ls -q)
+
+#Delete all docker Volumes
+docker volume rm $(docker volume ls -q)
+"Docker Volumes Deleted"
